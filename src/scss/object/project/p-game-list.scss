@@ -57,6 +57,10 @@
 .p-game-list__title {
   font-weight: $bold;
   font-size: prem(16);
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
   @include mq(md) {
     font-size: prem(14);
   }
