@@ -200,26 +200,6 @@ footer {
   outline: 4px solid #928173;
 }
 
-.c-title {
-  font-size: 1.5rem;
-  color: green;
-}
-@media screen and (max-width: 1199px) {
-  .c-title {
-    color: blue;
-  }
-}
-@media screen and (max-width: 999px) {
-  .c-title {
-    color: red;
-  }
-}
-@media screen and (max-width: 767px) {
-  .c-title {
-    color: black;
-  }
-}
-
 .p-404 {
   padding: 12.5rem 0;
 }

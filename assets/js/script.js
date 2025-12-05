@@ -1,4 +1,3 @@
-// jQuery: ハンバーガーメニュー
 jQuery(function ($) {
   // テキストスライドイン
   $(".js-text-slideIn").each(function () {
@@ -42,7 +41,7 @@ jQuery(function ($) {
     });
   });
 
-  // モーダルを開く
+  // モーダル
   $(".js-modal-open").each(function () {
     $(this).on("click", function (e) {
       e.preventDefault();

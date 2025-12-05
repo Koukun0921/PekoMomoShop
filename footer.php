@@ -13,7 +13,7 @@
           <a href="#game">ゲーム一覧</a>
         </li>
         <li class="p-footer__nav-item">
-          <a href="#terms">よくある質問</a>
+          <a href="#qa">よくある質問</a>
         </li>
       </ul>
     </nav>

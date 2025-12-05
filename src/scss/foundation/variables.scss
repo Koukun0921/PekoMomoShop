@@ -13,7 +13,6 @@ $breakpoints: null;
     "xl": "screen and (min-width: 1200px)",
   );
 } @else {
-  // ブレイクポイントの設定
   $breakpoints: (
     "sm": "screen and (max-width: 399px)",
     "md": "screen and (max-width: 767px)",

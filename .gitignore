@@ -1,8 +1,8 @@
 # git対象としないファイル、フォルダを記載する
-
 gulp/node_modules
 gulp/package-lock.json
 .vscode/
+
 # Mac
 .DS_Store
 __MACOSX

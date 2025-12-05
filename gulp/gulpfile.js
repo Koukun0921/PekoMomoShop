@@ -44,20 +44,12 @@ function javascript() {
 }
 
 const browserSyncOption = {
-  proxy: "http://pecomomoshop.local/", // ローカルにある「Site Domain」に合わせる
-  // baseDir: '../assets'//gulpfile.jsの格納場所からの相対パスを記述する必要あり
-  notify: false, // ブラウザ更新時に出てくる通知を非表示にする
-  // open: "external",// ローカルIPアドレスでサーバを立ち上げる
+  proxy: "http://pecomomoshop.local/",
+  notify: false,
 };
 
 function watchFiles() {
   browserSync.init(browserSyncOption);
-  // browserSync.init({
-  //   // server: {
-  //   //   baseDir: '../assets'//gulpfile.jsの格納場所からの相対パスを記述する必要あり
-  //   // }
-  // });
-
   watch("../src/scss/**/*.scss", styles);
   watch("../src/images/**/*", images);
   watch("../src/js/**/*.js", javascript);

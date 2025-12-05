@@ -200,7 +200,7 @@
     </div>
   </section>
 
-  <section class="p-qa">
+  <section id="qa" class="p-qa">
     <div class="p-qa__inner">
       <div class="p-qa__outline c-outline">
         <div class="p-qa__outline-square-box p-outline-square-box p-outline-square-box--tl">

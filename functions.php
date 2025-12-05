@@ -39,9 +39,6 @@ function my_google_fonts_preconnect()
 <?php
 }
 add_action('wp_head', 'my_google_fonts_preconnect', 1);
-/**
- * セキュリティー対策
- */
 
 /**
  * wordpressバージョン情報の削除
@@ -84,10 +81,7 @@ add_action('init', 'disable_output');
 
 function disable_output()
 {
-  remove_filter('the_content', 'wpautop');  // 本文欄
-  // remove_filter('the_title', 'wpautop');  // タイトル蘭
-  // remove_filter('comment_text', 'wpautop');  // コメント欄
-  // remove_filter('the_excerpt', 'wpautop');  // 抜粋欄
+  remove_filter('the_content', 'wpautop');
 }
 
 /*
@@ -130,11 +124,7 @@ function page_path($page = "")
  */
 function peco_theme_setup()
 {
-  // 投稿・固定ページでアイキャッチ画像（サムネイル）を有効化
   add_theme_support('post-thumbnails');
-
-  // 必要に応じてタイトルタグも有効化したい場合はコメントアウトを外す
-  // add_theme_support('title-tag');
 }
 add_action('after_setup_theme', 'peco_theme_setup');
 
