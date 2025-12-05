@@ -1,0 +1,60 @@
+@use "foundation" as *;
+
+.p-404 {
+  padding: prem(200) 0;
+  @include mq(md) {
+    padding: prem(160) 0;
+  }
+}
+
+.p-404__inner {
+  margin-inline: auto;
+  padding: 0 prem(25);
+  width: 100%;
+  max-width: prem(1250);
+  text-align: center;
+  @include mq("md") {
+    padding: 0 prem(20);
+  }
+}
+
+.p-404__title {
+  font-weight: $bold;
+  font-size: prem(28);
+  @include mq(md) {
+    font-size: prem(20);
+  }
+}
+
+.p-404__button {
+  margin-top: prem(40);
+  @include mq(md) {
+    margin-top: prem(24);
+  }
+}
+
+.p-404__button a {
+  background-color: $color-white;
+  border: none;
+  border-radius: prem(8);
+  color: $color-black;
+  cursor: pointer;
+  font-family: $font-family-second;
+  font-weight: $medium;
+  font-size: prem(20);
+  padding: prem(16) prem(20);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.3s;
+  @include mq(md) {
+    padding: prem(10) prem(16);
+    font-size: prem(18);
+  }
+}
+
+.p-404__button a:hover {
+  color: $color-white;
+  background-color: $color-black;
+  opacity: 1;
+}

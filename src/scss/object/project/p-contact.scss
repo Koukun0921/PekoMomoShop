@@ -1,0 +1,126 @@
+@use "foundation" as *;
+
+.p-contact {
+  padding: prem(60) 0 prem(80);
+  background-color: $color-black-02;
+  @include mq(md) {
+    padding: prem(50) 0 prem(60);
+  }
+}
+
+.p-contact__inner {
+  margin-inline: auto;
+  padding: 0 prem(25);
+  max-width: prem(850);
+  @include mq("md") {
+    padding: 0 prem(20);
+  }
+}
+
+.p-contact__contents {
+  padding: prem(40) prem(25);
+  position: relative;
+  outline: 4px solid #8d8f84;
+  outline-offset: -4px;
+  border-radius: prem(8);
+  text-align: center;
+  @include mq(md) {
+    padding: prem(40) prem(20);
+    outline: 3px solid #8d8f84;
+    outline-offset: -3px;
+  }
+}
+
+.p-contact__title {
+  padding: 0 prem(16);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  max-width: fit-content;
+  transform: translate(-50%, -50%);
+  font-size: prem(22);
+  font-weight: $bold;
+  background-color: $color-black-02;
+  text-wrap: nowrap;
+  @include mq("md") {
+    padding: 0 prem(10);
+    font-size: prem(16);
+  }
+}
+
+.p-contact__text {
+  font-family: $font-family-second;
+  font-size: prem(16);
+  @include mq("md") {
+    font-size: prem(14);
+  }
+}
+
+.p-contact__sns {
+  margin-top: prem(40);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: prem(40);
+}
+
+.p-contact__sns-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: prem(16);
+}
+
+.p-contact__sns-row {
+  display: flex;
+  justify-content: center;
+  gap: prem(80);
+  @include mq(md) {
+    gap: prem(40);
+    flex-wrap: wrap;
+  }
+}
+
+.p-contact__sns-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: prem(16);
+}
+
+.p-contact__sns-label,
+.p-contact__line-label {
+  font-size: prem(18);
+  @include mq(md) {
+    font-size: prem(16);
+  }
+}
+
+.p-contact__sns-icon {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.p-contact__sns-icon-img,
+.p-contact__line-icon-img {
+  width: prem(50);
+}
+
+.p-contact__sns-icon-img img,
+.p-contact__line-icon-img img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+.p-contact__line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: prem(16);
+}
+
+.p-contact__line-icon {
+  border-radius: prem(10);
+  overflow: hidden;
+}

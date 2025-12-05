@@ -1,0 +1,116 @@
+@use "foundation" as *;
+
+.p-terms {
+  padding: prem(120) 0 prem(60);
+  background-color: $color-gray;
+  @include mq("md") {
+    padding: prem(100) 0 prem(40);
+  }
+}
+
+.p-terms__inner {
+  margin-inline: auto;
+  padding: 0 prem(25);
+  max-width: prem(1250);
+  @include mq("md") {
+    padding: 0 prem(20);
+  }
+}
+
+.p-terms__title-wrap {
+  text-align: center;
+}
+
+.p-terms__main-title {
+  font-size: prem(48);
+  font-weight: $bold;
+  color: $color-white;
+  @include mq("md") {
+    font-size: prem(24);
+  }
+}
+
+.p-terms__sub-title {
+  margin-top: prem(16);
+  font-size: prem(22);
+  color: $color-white;
+  @include mq("md") {
+    font-size: prem(16);
+  }
+}
+
+.p-terms__main-title,
+.p-terms__sub-title {
+  opacity: 0;
+}
+
+.p-terms__main-title span,
+.p-terms__sub-title span {
+  display: inline-block;
+  transform: scale(0);
+}
+
+.p-terms__main-title.is-active,
+.p-terms__sub-title.is-active {
+  opacity: 1;
+}
+
+.p-terms__main-title.is-active span {
+  animation: slideIn 0.6s cubic-bezier(0.15, 1, 0.3, 1) forwards
+    calc(0.03s * var(--index, 0));
+}
+
+.p-terms__sub-title.is-active span {
+  animation: slideIn 0.3s cubic-bezier(0.15, 1, 0.3, 1) forwards
+    calc(0.6s + 0.02s * var(--index, 0));
+}
+
+.p-terms__contents {
+  position: relative;
+  margin-top: prem(40);
+  padding: prem(30) prem(25) prem(20);
+  outline: 4px solid $color-white;
+  outline-offset: -4px;
+  border-radius: prem(8);
+  @include mq(md) {
+    outline: 3px solid $color-white;
+    outline-offset: -3px;
+  }
+}
+
+.p-terms__content-title {
+  padding: 0 prem(16);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  max-width: fit-content;
+  transform: translate(-50%, -50%);
+  background-color: $color-gray;
+  font-size: prem(18);
+  font-weight: $bold;
+  color: $color-white;
+  text-wrap: nowrap;
+  @include mq("md") {
+    font-size: prem(14);
+  }
+}
+
+.p-terms__content-list {
+  list-style: none;
+}
+
+.p-terms__content-item {
+  padding-left: prem(16);
+  text-indent: prem(-14);
+}
+
+.p-terms__content-item:nth-child(6),
+.p-terms__content-item:nth-child(7) {
+  margin-top: prem(16);
+}
+
+.p-terms__content-text {
+  font-size: prem(14);
+  color: $color-white;
+}

@@ -1,0 +1,95 @@
+@use "foundation" as *;
+
+.p-outline-square-box {
+  position: absolute;
+  display: inline-block;
+  width: prem(70);
+  height: prem(70);
+  @include mq(md) {
+    width: prem(50);
+    height: prem(50);
+  }
+}
+
+.p-outline-square-box--tl {
+  top: 0;
+  left: 0;
+}
+
+.p-outline-square-box--tr {
+  top: 0;
+  right: 0;
+}
+
+.p-outline-square-box--br {
+  bottom: 0;
+  right: 0;
+}
+
+.p-outline-square-box--bl {
+  bottom: 0;
+  left: 0;
+}
+
+.p-outline-main-square {
+  position: absolute;
+  width: prem(40);
+  height: prem(40);
+  outline: 4px solid #191a37;
+  @include mq(md) {
+    width: prem(30);
+    height: prem(30);
+  }
+}
+
+.p-outline-square-box--tl .p-outline-main-square {
+  top: 0;
+  left: 0;
+}
+
+.p-outline-square-box--tr .p-outline-main-square {
+  top: 0;
+  right: 0;
+}
+
+.p-outline-square-box--br .p-outline-main-square {
+  bottom: 0;
+  right: 0;
+}
+
+.p-outline-square-box--bl .p-outline-main-square {
+  bottom: 0;
+  left: 0;
+}
+
+.p-outline-sub-square {
+  position: absolute;
+  width: prem(30);
+  height: prem(30);
+  outline: 4px solid #191a37;
+  outline-offset: -4px;
+  @include mq(md) {
+    width: prem(20);
+    height: prem(20);
+  }
+}
+
+.p-outline-square-box--tl .p-outline-sub-square {
+  bottom: 0;
+  right: 0;
+}
+
+.p-outline-square-box--tr .p-outline-sub-square {
+  bottom: 0;
+  left: 0;
+}
+
+.p-outline-square-box--br .p-outline-sub-square {
+  top: 0;
+  left: 0;
+}
+
+.p-outline-square-box--bl .p-outline-sub-square {
+  top: 0;
+  right: 0;
+}

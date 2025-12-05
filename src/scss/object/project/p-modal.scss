@@ -1,0 +1,76 @@
+@use "foundation" as *;
+
+.p-modal {
+  width: 100%;
+  max-width: prem(800);
+  max-height: 70dvh;
+  padding: prem(80) 0 prem(40);
+  background-color: $color-gray;
+  border-radius: prem(40);
+  outline: 2px solid $color-white;
+  outline-offset: -2px;
+  @include mq(md) {
+    max-width: calc(100% - prem(40));
+    margin-inline: auto;
+    padding: prem(60) 0 prem(30);
+  }
+}
+
+.p-modal__close-button {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: prem(20) prem(30);
+  outline: none;
+  border: none;
+  font-size: prem(14);
+  text-transform: uppercase;
+  color: $color-black;
+  border-radius: 0 0 0 prem(16);
+  background-color: $color-white;
+  cursor: pointer;
+  @include mq(md) {
+    padding: prem(16) prem(20);
+    font-size: prem(12);
+  }
+}
+
+.p-modal__inner {
+  margin: auto;
+  padding: 0 prem(40);
+  max-width: prem(800);
+  width: 100%;
+  @include mq(md) {
+    padding: 0 prem(20);
+  }
+}
+
+.p-modal__img {
+  width: 100%;
+  max-width: prem(150);
+  margin-inline: auto;
+  border-radius: prem(16);
+  overflow: hidden;
+}
+
+.p-modal__img img {
+  width: 100%;
+  max-height: prem(150);
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.p-modal__text {
+  margin-top: prem(40);
+  font-size: prem(14);
+  line-height: 2;
+  letter-spacing: 0.05em;
+  @include mq(md) {
+    margin-top: prem(20);
+  }
+}
+
+.p-modal__text .wp-block-preformatted {
+  margin: 0;
+}

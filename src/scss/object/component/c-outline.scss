@@ -1,0 +1,10 @@
+@use "foundation" as *;
+
+.c-outline {
+  position: relative;
+  padding: prem(20);
+  outline: 4px solid #191a37;
+  @include mq(md) {
+    padding: prem(16);
+  }
+}

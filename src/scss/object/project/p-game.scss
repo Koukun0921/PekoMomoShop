@@ -1,0 +1,56 @@
+@use "foundation" as *;
+
+.p-game {
+  padding: prem(60) 0;
+  @include mq(md) {
+    padding: prem(40) 0;
+  }
+}
+
+.p-game__inner {
+  margin-inline: auto;
+  padding: 0 prem(25);
+  width: 100%;
+  max-width: prem(1250);
+  @include mq("md") {
+    padding: 0 prem(20);
+  }
+}
+
+.p-game__content {
+  padding: prem(60) prem(40);
+  background-color: $color-black;
+  border-radius: prem(80);
+  @include mq(md) {
+    padding: prem(40) prem(20);
+    border-radius: prem(40);
+  }
+}
+
+.p-game__title-wrap {
+  text-align: center;
+}
+
+.p-game__main-title {
+  font-weight: $bold;
+  font-size: prem(38);
+  @include mq(md) {
+    font-size: prem(28);
+  }
+}
+
+.p-game__sub-title {
+  margin-top: prem(8);
+  font-weight: $bold;
+  font-size: prem(20);
+  @include mq(md) {
+    font-size: prem(16);
+  }
+}
+
+.p-game__list {
+  margin-top: prem(40);
+  @include mq(md) {
+    margin-top: prem(32);
+  }
+}

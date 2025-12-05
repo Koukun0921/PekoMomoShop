@@ -1,0 +1,62 @@
+@use "foundation" as *;
+
+.p-pay {
+  padding: prem(60) 0;
+  background-color: $color-black-02;
+  @include mq(md) {
+    padding: prem(40) 0;
+  }
+}
+
+.p-pay__inner {
+  margin-inline: auto;
+  padding: 0 prem(25);
+  max-width: prem(1050);
+  @include mq("md") {
+    padding: 0 prem(20);
+  }
+}
+
+.p-pay__contents {
+  padding: prem(80) prem(25);
+  @include mq(md) {
+    padding: prem(60) prem(20);
+  }
+}
+
+.p-pay__title {
+  font-size: prem(28);
+  font-weight: $bold;
+  text-align: center;
+  @include mq("md") {
+    font-size: prem(20);
+  }
+}
+
+.p-pay__content-list {
+  margin-top: prem(40);
+  list-style: none;
+  @include mq(md) {
+    margin-top: prem(30);
+  }
+}
+
+.p-pay__content-item {
+  padding-left: prem(16);
+  text-indent: prem(-16);
+}
+
+.p-pay__content-text {
+  font-family: $font-family-second;
+  font-size: prem(18);
+  @include mq(md) {
+    font-size: prem(16);
+  }
+}
+
+.p-pay__support {
+  margin-top: prem(40);
+  @include mq(md) {
+    margin-top: prem(30);
+  }
+}

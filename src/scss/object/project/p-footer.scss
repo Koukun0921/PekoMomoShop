@@ -1,0 +1,51 @@
+@use "foundation" as *;
+
+.p-footer {
+  padding: prem(20) 0;
+  background-color: $color-black;
+  @include mq(md) {
+    padding: prem(40) 0;
+  }
+}
+
+.p-footer__inner {
+  margin-inline: auto;
+  padding: 0 prem(25);
+  width: 100%;
+  @include mq("md") {
+    padding: 0 prem(20);
+  }
+}
+
+.p-footer__logo {
+  font-family: $font-family-second;
+  font-weight: $bold;
+  font-size: prem(28);
+  text-align: center;
+}
+
+.p-footer__nav {
+  margin-top: prem(20);
+}
+
+.p-footer__nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include mq(md) {
+    flex-direction: column;
+  }
+}
+
+.p-footer__nav-item + .p-footer__nav-item {
+  margin-left: prem(20);
+  @include mq(md) {
+    margin-left: 0;
+    margin-top: prem(16);
+  }
+}
+
+.p-footer__nav-item a {
+  padding: prem(8);
+  font-size: prem(20);
+}

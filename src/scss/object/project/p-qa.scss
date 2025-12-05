@@ -1,0 +1,59 @@
+@use "foundation" as *;
+
+.p-qa {
+  padding: prem(60) 0;
+  @include mq(md) {
+    padding: prem(40) 0;
+  }
+}
+
+.p-qa__inner {
+  margin-inline: auto;
+  padding: 0 prem(25);
+  max-width: prem(1250);
+  @include mq("md") {
+    padding: 0 prem(20);
+  }
+}
+
+.p-qa__contents {
+  padding: prem(60) prem(30);
+  @include mq(md) {
+    padding: prem(40) prem(20);
+  }
+}
+
+.p-qa__title {
+  font-size: prem(28);
+  font-weight: $bold;
+  text-align: center;
+  @include mq("md") {
+    font-size: prem(20);
+  }
+}
+
+.p-qa__content-list {
+  margin-top: prem(40);
+  list-style: none;
+  @include mq(md) {
+    margin-top: prem(30);
+  }
+}
+
+.p-qa__content-item {
+  padding-left: prem(16);
+  text-indent: prem(-16);
+}
+
+.p-qa__content-item + .p-qa__content-item {
+  margin-top: prem(32);
+}
+
+.p-qa__question,
+.p-qa__answer {
+  font-family: $font-family-second;
+  font-size: prem(18);
+  @include mq(md) {
+    font-size: prem(16);
+  }
+}
