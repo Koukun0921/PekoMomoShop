@@ -46,10 +46,14 @@ jQuery(function ($) {
     $(this).on("click", function (e) {
       e.preventDefault();
       e.stopPropagation();
-      closeModal();
       var target = $(this).data("target");
       var modal = document.getElementById(target);
       if (!modal) return;
+      var $openModal = $(".js-modal.is-open");
+      if ($openModal.length > 0) {
+        closeModal();
+        return;
+      }
       $(modal).fadeIn().addClass("is-open");
       $("html,body").css("overflow", "hidden");
     });
